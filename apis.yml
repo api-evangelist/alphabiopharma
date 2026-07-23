@@ -1,19 +1,46 @@
 aid: alphabiopharma
-name: alphabiopharma
-description: alphabiopharma is a company surfaced as a portfolio company of qiming and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alphabiopharma.png
+name: Alpha Biopharma
+description: 'Alpha Biopharma is a clinical-stage biopharmaceutical company founded in 2017 and headquartered
+  in Shanghai, China, with an additional office in Beijing. The company focuses on the clinical development
+  and commercialization of global innovative drugs across oncology and immunotherapy, spanning medical
+  affairs, clinical operations, regulatory affairs and commercialization. Its lead product is Zorifertinib
+  (formerly AZD-3759, marketed as Zorifer), a next-generation EGFR TKI designed for EGFR mutation positive
+  advanced NSCLC patients with central nervous system metastases, which received NMPA approval in November
+  2024 as the first EGFR-TKI indicated for lung cancer with brain metastases. Alpha Biopharma also partners
+  with Wugen Inc. on universal off-the-shelf memory NK and CAR-T cell therapies. The company raised a
+  Series A led by Qiming Venture Partners. Alpha Biopharma publishes a corporate marketing website only
+  and operates no public API, developer portal, or software platform.'
 url: https://raw.githubusercontent.com/api-evangelist/alphabiopharma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qiming
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Biopharmaceutical
+- Pharmaceuticals
+- Oncology
+- Immunotherapy
+- Clinical Development
+- Life Sciences
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,42 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alphabiopharma-domain-security.yml
 - type: Website
-  url: https://alphabiopharma.com.cn
+  url: https://www.alphabiopharma.com/en/
+- type: About
+  url: https://www.alphabiopharma.com/en/company/1.html
+- type: Blog
+  url: https://www.alphabiopharma.com/en/news/15.html
+- type: Press
+  url: https://www.alphabiopharma.com/en/news/36.html
+- type: Pipeline
+  url: https://www.alphabiopharma.com/en/productline/30.html
+- type: Contact
+  url: https://www.alphabiopharma.com/en/contact/23.html
+- type: Careers
+  url: https://www.alphabiopharma.com/en/vocation/20.html
+- type: Investors
+  url: https://www.alphabiopharma.com/en/investment/27.html
+- type: Publications
+  url: https://www.alphabiopharma.com/en/innovation/38.html
+- type: Research
+  url: https://www.alphabiopharma.com/en/development/31.html
+- type: Products
+  url: https://www.alphabiopharma.com/en/medicine1/32.html
+- type: TherapeuticAreas
+  url: https://www.alphabiopharma.com/en/ta/7.html
+- type: CorporateSocialResponsibility
+  url: https://www.alphabiopharma.com/en/society/29.html
+- type: WellKnown
+  url: well-known/alphabiopharma-well-known.yml
+- type: Packages
+  url: packages/alphabiopharma-packages.yml
+- type: LLMsTxt
+  url: llms/alphabiopharma-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

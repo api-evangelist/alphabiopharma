@@ -1,0 +1,14 @@
+{
+  "repo": "alphabiopharma",
+  "feeds": [
+    {
+      "source": "https://www.alphabiopharma.com/en/company/1.html",
+      "feed_url": "https://www.alphabiopharma.com/en/company/1.html",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-20T13:31:34Z"
+}

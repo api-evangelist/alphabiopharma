@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of https://www.alphabiopharma.com
+host: https://www.alphabiopharma.com
+notes: 'All standard /.well-known/ discovery documents returned 404, re-verified 2026-07-20. Alpha Biopharma
+  publishes a corporate marketing site only and exposes no API, OAuth/OIDC authorization server, API catalog,
+  or security.txt. Recorded so future enrichment rounds do not re-probe unnecessarily. The domain
+  alphabiopharma.com.cn previously recorded in apis.yml does not resolve (NXDOMAIN) and was corrected to
+  alphabiopharma.com. robots.txt and sitemap.xml do return 200, but both are stale build artifacts: robots.txt
+  advertises a sitemap on the unrelated host ctyycs.zhulu76.com, and sitemap.xml is a 2020 file produced by a
+  free sitemap generator that enumerates only that same staging host — it contains no alphabiopharma.com URLs.
+  Neither is a usable discovery surface, so no pointer was wired to them.'
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 200
+  usable: false
+  note: stale; advertises a sitemap on the unrelated host ctyycs.zhulu76.com
+- path: /sitemap.xml
+  status: 200
+  usable: false
+  note: 2020 generator output enumerating only ctyycs.zhulu76.com; contains no alphabiopharma.com URLs

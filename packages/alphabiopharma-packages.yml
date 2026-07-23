@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: live registry queries + GitHub org lookup
+notes: 'Searched the public package registries and code-host surface for first-party Alpha Biopharma client
+  libraries. No packages were found in any registry and no GitHub organization exists under alphabiopharma
+  or alpha-biopharma. This is the expected result: Alpha Biopharma is a clinical-stage biopharmaceutical
+  company that publishes a corporate marketing website only, with no public API, developer portal, or
+  software platform to build client libraries against. Recorded as a negative result so future rounds do
+  not re-probe. No SDKs pointer is wired, because zero official client libraries exist.'
+registries_searched:
+- registry: npm
+  query: alphabiopharma
+  results: 0
+- registry: pypi
+  query: alphabiopharma
+  status: 404
+- registry: rubygems
+  query: alphabiopharma
+  status: 404
+- registry: crates.io
+  query: alphabiopharma
+  results: 0
+- registry: github
+  query: orgs/alphabiopharma
+  status: 404
+- registry: github
+  query: orgs/alpha-biopharma
+  status: 404
+packages: []
